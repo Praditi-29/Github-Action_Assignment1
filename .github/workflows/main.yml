@@ -40,9 +40,7 @@ jobs:
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
       #   steps:
-jobs1:
-  # This workflow contains a single job called "build"
-  build:
+  job2:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
