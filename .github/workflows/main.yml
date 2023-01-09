@@ -12,7 +12,7 @@ on:
 
 env:
  File1: Sum.py
- File2: Prime.py
+ File2: Sub.py
  num1: ${{ github.event.inputs.Number-1 }}
  num2: ${{ github.event.inputs.Number-1 }}
 
