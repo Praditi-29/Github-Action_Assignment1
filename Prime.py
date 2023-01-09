@@ -1,6 +1,6 @@
-import os
-start= int(os.environ["num1"]) 
-end= int(os.environ["num2"]) 
+import sys
+start=int(sys.argv[1])
+end=int(sys.argv[2])
 print("Prime numbers are:")
 for num in range(start, end + 1):
    if num > 1:

@@ -1,4 +1,5 @@
-import os
-a =int(os.environ["num1"]) 
-b= int(os.environ["num2"]) 
+
+import sys
+a =int(sys.argv[1])
+b= int(sys.argv[1])
 print('Sum =' ,a+b)
