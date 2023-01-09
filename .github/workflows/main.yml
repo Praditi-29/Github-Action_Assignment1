@@ -33,4 +33,3 @@ jobs:
           python-version: '3.10'
       - run: |
          python $File1 $num1 $num2
-         python $File2 $num1 $num2
