@@ -43,7 +43,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: |
-          python Sum.py $num1 $num2
+          python Sum.py ${{ env.num1 }} ${{ env.num1 }}
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
