@@ -5,16 +5,20 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  # push:
+  #   branches: [ "master" ]
+  # pull_request:
+  #   branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
    inputs:
     Number-1:
      description: 'First-Number'
+     required: true
+    
+    Number-2:
+     description: 'Second-Number'
      required: true
 
 
@@ -45,16 +49,16 @@ jobs:
       #     echo Add other actions to build,
       #     echo test, and deploy your project.
       #   steps:
-  job2:
-    needs: build
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  # job2:
+  #   needs: build
+  #   # The type of runner that the job will run on
+  #   runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - run: python main2.py
+  #   # Steps represent a sequence of tasks that will be executed as part of the job
+  #   steps:
+  #     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-python@v4
+  #       with:
+  #         python-version: '3.10'
+  #     - run: python main2.py
