@@ -14,7 +14,7 @@ on:
     File1: Sum.py
     File2: Prime.py
     num1: ${{ github.event.inputs.First-Number }}
-    num2: ${{github.event.inputs.second-Number}}
+    num2: ${{ github.event.inputs.second-Number }}
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
